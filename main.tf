@@ -11,9 +11,7 @@ provider "vngcloud" {
   token_url             = "https://monitoring-agent.vngcloud.vn/v1/intake/oauth2/token"
   client_id             = var.client_id
   client_secret         = var.client_secret
-  project_id            = ""
-  user_id               = ""
-  vserver_base_url      = "https://vserverapi.vngcloud.vn/vserver-gateway"
+  base_url      = "https://vserverapi.vngcloud.vn/vserver-gateway"
 }
 
 data "vngcloud_vserver_flavor_zone" "flavor_zone" {
